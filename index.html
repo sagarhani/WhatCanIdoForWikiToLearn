@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>What can I do for WikiToLearn</title>
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,200i,200,300,400" rel="stylesheet"> 
+    </head>
+    <body onload="loadContent();">
+        <header>
+            <center>
+                <img style="opacity: 0.1;position: absolute;left: 6%;top: 0px;height: 64px;z-index:-1;" src="images/computerscience.png">
+                <img style="opacity: 0.1;position: absolute;right: 5%;top: 31px;height: 100px;z-index:-1;" src="images/social.png">
+                <img style="opacity: 0.1;position: absolute;right: 35%;bottom: 0px;height: 100px;z-index:-1;" src="images/engineering.png">
+                <img style="opacity: 0.1;position: absolute;left: 9%;top: 65px;height: 130px;z-index:-1;" src="images/design.png">
+                <div id="question"></div>
+                <div id="subject">Wait a second...</div>
+                <div id="discription"></div>
+            </center>
+        </header>
+        <center>
+            <div id="selectArea">
+                <div class="button" id="agreeButton" onclick="agreeLoadNext();">
+                    <svg fill="#FFFFFF" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    <div id="agreeLabel">Yes</div>
+                </div>
+                <div class="button" id="disagreeButton" onclick="disagreeLoadNext();">
+                    <svg fill="#FFFFFF" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg>
+                    <div id="disagreeLabel">No</div>
+                </div>
+                <div class="button" id="backButton" onclick="backLoadPrev();" style="display:none;">
+                    <svg fill="#FFFFFF" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                    </svg>
+                    <div id="backLabel">Please, take me back</div>
+                </div>
+            </div>
+            <footer>Check out <a href="http://wikitolearn.org">WikiToLearn</a></footer>
+        </center>
+        <script src="script/main.js"></script>
+    </body>
+</html>

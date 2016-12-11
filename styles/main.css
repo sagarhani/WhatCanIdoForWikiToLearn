@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+input::-moz-focus-inner { 
+	border: 0; 
+	padding: 0; 
+	margin-top:-2px; 
+	margin-bottom: -2px; 
+}
+
+body {
+    background: rgb(240,240,240);
+}
+
+header {
+    background: rgb(33, 168, 196);
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    padding-top: 20px;
+    color: gray;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+    font-style: italic;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#selectArea {
+    padding-top: 50px;
+    width: 304px;
+    background: white;
+    padding: 30px 30px 30px 30px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.button {
+    height: 38px;
+    width: 300px;
+    border-radius: 5px;
+    border: 2px solid;
+    transition: transform 200ms;
+    margin: 15px 0 15px 0;
+    font-weight: 300;
+    font-size: 25px;
+    cursor: pointer;
+    color: #FFFFFF !important;
+}
+
+.button svg {
+    height: 100%;
+    float: left;
+}
+
+.button div {
+    padding-top: 6px;
+}
+
+.button:hover {
+    transform: scale(1.1,1.1);
+}
+
+#agreeButton {background: #43a047;border-color: #43a047;}
+
+#disagreeButton {background: #d32f2f;border-color: #d32f2f;}
+
+#backButton {background: #ef6c00;border-color: #ef6c00;}
+
+#question {
+    padding-top: 25px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 200;
+    color: white;
+    text-shadow: 0 3px 2px rgba(0,0,0,0.25);
+}
+
+#subject {
+    font-weight: 400;
+    font-size: 70px;
+    padding: 5px 0 5px 0;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    text-shadow: 0 3px 2px rgba(0,0,0,0.25);
+}
+
+#discription {
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    padding: 5px 0 25px 0;
+}
